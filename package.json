@@ -1,0 +1,21 @@
+{
+  "name": "microfrontends-react-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "installProjects": "concurrently \"cd angular-project-module && yarn \" \"cd portal && yarn\" \"cd react15-assets-module && yarn\" \"cd react17-user-module && npm run installProjects\"",
+    "start": "concurrently \"cd angular-project-module && yarn start\" \"cd portal && yarn start\" \"cd react15-assets-module && yarn start\" \"cd react17-user-module && npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sstrehler@bitbucket.org/stremo/microfrontends-react-portal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/stremo/microfrontends-react-portal#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

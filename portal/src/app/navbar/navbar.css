@@ -1,0 +1,12 @@
+.navbar {
+
+  height: 30px;
+  width: 100%;
+  background-color: #d4d4d4;
+  border-bottom: #cbcbcb 1px solid;
+  padding-top: 10px;
+}
+
+.navbar-item {
+  padding: 10px 0 0 10px;
+}
