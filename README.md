@@ -3,7 +3,7 @@ This repository provides a frontend microservice example using webpack 5 module 
 
 ## setup: 
 
-run `npm install && npm run installProjects` to install dependencies
+run `npm install -g concurrently && npm run installProjects` to install dependencies
 
 run `npm start` to start all applications 
 
