@@ -9,7 +9,7 @@ export class React17UserElement extends HTMLElement {
         const basePath: string = this.getAttribute("routepath") || "";
         const apiBasePath: string = this.getAttribute("apibasepath") || "";
         ReactDOM.render(<UserApplication basePath={basePath}
-                                         apiBasePath={apiBasePath}/>, this);
+        apiBasePath={apiBasePath}/>, this);
     }
 }
 

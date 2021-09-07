@@ -6,7 +6,7 @@ import {useState} from "react";
 const dummyModules: Microfrontend[] = [
     {
         // For Loading
-        remoteEntry: 'http://localhost:5001/remoteEntry.js',
+        remoteEntry: '/react17/remoteEntry.js',
         remoteName: 'react17UserModule',
         exposedModule: './web-components',
 

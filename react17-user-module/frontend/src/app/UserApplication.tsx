@@ -13,7 +13,7 @@ export function UserApplication(props: { basePath: string, apiBasePath: string }
     return (
         <div className="App">
             <BasePathContext.Provider value={{apiBasePath: props.apiBasePath}}>
-
+hot reloading works sfsklflksjflksdfkjsdlfjksdfjk
                 <Router basename={props.basePath}>
                 <Switch>
                     <Route path="/users/:uuid" component={UserDetailsPage}/>

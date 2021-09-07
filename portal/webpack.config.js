@@ -33,7 +33,25 @@ module.exports = options => {
         ],
         devServer: {
             port: 5000,
-            contentBase: [path.join(__dirname, 'public'), path.join(__dirname, 'dist')]
+            contentBase: [path.join(__dirname, 'public'), path.join(__dirname, 'dist')],
+            historyApiFallback: { index: "/", disableDotRule: true },
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+                "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+            },
+            proxy: {
+                '/react17': {
+                    target: {
+                        host: "localhost",
+                        protocol: 'http:',
+                        port: 5001
+                    },
+                    pathRewrite: {
+                        '^/react17': ''
+                    }
+                }
+            }
         }
     }
 }
